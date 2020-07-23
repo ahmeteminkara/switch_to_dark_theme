@@ -6,11 +6,10 @@ import 'package:switch_to_dark_theme/pages/home.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<ThemeChanger>(
-      builder: (_) => ThemeChanger(ThemeData.dark()),
+      builder: (_) => ThemeChanger(ThemeData.light()),
       child: MaterialAppWithTheme(),
     );
   }
